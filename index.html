@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Webside :)</title>
+</head>
+<body>
+<a href="https://poki.com">Klick here for a webside</a>
+
+<h1 class="bruh1">Bruh</h1>
+<h2 class="bruh2">Bruh</h2>
+<h3 class="bruh3">Bruh</h3>
+<h4>Bruh</h4>
+<h5>bruh</h5>
+
+<p>
+  <em>Abruh</em> <strong>Kadabruh</strong> <u>Simsalabruh</u>
+  <strong>????????????<u>?????hah</strong>ahaha</u>
+</p>
+
+<button id="einButton" onclick="alert('AUA! Wer hat dir erlaubt mich zu Clicken?')" >Button</button>
+<style>
+.bruh1 { color: rgb(3, 252, 177); }
+.bruh2 { color : rgb(167, 167, 164)}
+.bruh3 { color : red}
+</style>
+
+<div>
+<input id="geheimcode"  placeholder="Bitte Geheimcode eingeben" maxlength="4">
+</div>
+
+<script>
+const inputFeld = document.getElementById('geheimcode');
+const geheimCode = "1234"
+inputFeld.addEventListener('input', function() {
+            if (inputFeld.value === geheimCode) {
+                document.body.style.backgroundColor = "gold";
+                alert("Wie konntest du den SUPER-Geheim-Code erraten, du musst ein richtiges Genie sein.(Solange du den Geheim code nicht löschst darfst du die neue Hintergrungfarbe genießen.)");
+            } else {
+                document.body.style.backgroundColor = "white";
+            }
+        });
+</script>
+
+
+<input type="checkbox">
+<h1>*irgendwas um eine zeile abstand zu lassen*</h1>
+<label for="inputID">click here to go to the eingabefeld</label>
+<input type="text" id="inputID" >
+<p class="verstecktext">Hallo
+</p>
+
+<style>
+.verstecktext {color : white}
+</style>
+
+<ul>  <strong> <u>Meine Punktliste</u> </strong>
+  <li>Listengegenstand1</li>
+  <li>usw.</li>
+  <li>usw.</li>
+</ul>
+
+<ol>  <strong> <u>Meine Nummerliste</u> </strong>
+    <li>Listengegenstand1</li>
+     <li>usw.</li>
+    <li>usw.</li>
+</ol>
+
+<div>
+  
+
+
+</div>
+
+</body>
+</html>
