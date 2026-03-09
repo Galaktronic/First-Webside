@@ -75,11 +75,19 @@ inputFeld.addEventListener('input', function() {
     <li>usw.</li>
 </ol>
 
-<div>
-  
+   <input type="text" id="userInput" placeholder="Tippe etwas">
+    <button type="button" onclick="showInput()">Absenden</button>
+  </form>
 
+  <div id="output"></div>
 
-</div>
+  <script>
+    function showInput() {
+      // unsicher: zeigt direkt HTML an (Simulation von XSS)
+      let input = document.getElementById("userInput").value;
+      document.getElementById("output").innerHTML = input;
+    }
+
 
 </body>
 </html>
